@@ -3,7 +3,13 @@ myTUM Webmailer CHANGES
 =======================
 
 
-1.0 (unreleased)
+1.0.1 (2010-08-04)
+==================
+
+- Fixed #7802 (XSS vulnerability).
+
+
+1.0 (2010-08-04)
 ================
 
 - erster Release als Paket.
