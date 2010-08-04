@@ -1,0 +1,9 @@
+=======================
+myTUM Webmailer CHANGES
+=======================
+
+
+1.0 (unreleased)
+================
+
+- erster Release als Paket.
