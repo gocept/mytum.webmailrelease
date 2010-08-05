@@ -2,7 +2,78 @@
 Installation
 ============
 
-1.0
-===
+Update-Anweisungen
+==================
 
-- ist bereits in Produktion.
+1.0
+---
+
+- nichts zu tun, ist bereits in Produktion.
+
+
+Abhängigkeiten
+==============
+
+Zope:
+Zope-2.11
+Five-1.4.4
+
+Pakete (zu beziehen unter <http://pypi.python.org/pypi/NAME>):
+setuptools
+lxml
+BeautifulSoup
+python-cjson
+uuid
+z3c.noop
+z3c.hashedresource
+five.hashedresource
+five.localsitemanager-1.0
+
+
+Installation
+============
+
+- site.zcml:
+
+  <include package="five.localsitemanager" />
+  <includeOverrides package="five.localsitemanager" file="overrides.zcml" />
+  <include package="mytum.webmail" file="webmailer.zcml" />
+
+- Webmail-Properties sicherstellen:
+    mailserver
+    mailserver_smtp
+    imapport
+    smtpport
+    username
+    password
+    account_email
+    account_name
+    mailbox_trash
+    mailbox_sent
+    has_mailbox
+    tum_login
+    custommenu_target
+    custommenu_title
+
+- Webmailer anlegen
+
+- Webmailer-Objekt: Properties setzen (banner_url='/header', banner_height=154)
+
+- PortalDateFormatter anlegen:
+  bin/zopectl run path/to/mytum.webmail/scripts/evolve1.py
+
+- PortalErrorHandler anlegen:
+  bin/zopectl run path/to/mytum.webmail/scripts/evolve1.py
+
+
+Sandbox
+=======
+
+In der Sandbox muss in der Debug-Konsole das `init_mytum_properties` aufgerufen
+werden. Als zweites Argument ist eine Liste der User anzugeben, die per default
+einen mytum-Account haben sollen:
+
+  >>> from mytum.webmail.tests import init_mytum_properties
+  >>> init_mytum_properties(app, ["admin"])
+  >>> import transaction
+  >>> transaction.commit()
