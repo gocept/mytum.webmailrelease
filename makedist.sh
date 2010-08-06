@@ -8,10 +8,14 @@ DISTDIR=$CURDIR/dist
 DOWNLOADDIR=download.gocept.com:/var/www/download.gocept.com/htdocs/webmailer/
 TARBALL=$DISTDIR/webmailer-$VERSION.tar.bz2
 
+echo $VERSION >VERSION.txt
+
 ./bin/buildout
 
 cd parts/omelette
-tar cj --dereference --exclude .svn --exclude "*.pyc" --exclude "*.pyo" -f $TARBALL gocept/imapapi gocept/restmail gocept/webmail gocept/__init__.py mytum ../../CHANGES.txt ../../INSTALL.txt
+tar cj --dereference --exclude .svn --exclude "*.pyc" --exclude "*.pyo" -f $TARBALL gocept/imapapi gocept/restmail gocept/webmail gocept/__init__.py mytum ../../CHANGES.txt ../../INSTALL.txt ../../VERSION.txt
+
+rm ../../VERSION.txt
 
 if [ `echo $VERSION |grep b` ]; then
     LATEST="testing"
