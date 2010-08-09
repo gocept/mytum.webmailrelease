@@ -2,6 +2,29 @@
 myTUM Webmailer CHANGES
 =======================
 
+1.1beta1 (2010-08-09)
+=====================
+
+Features:
+
+- Allow sending plain-text messages. (#6207)
+
+- Filter the list of messages in a folder. (#4699)
+
+- Support e-mail signatures. (#4590)
+
+Bug fixes:
+
+- Fixed a cross-site-scripting vulnerability in displaying the message list.
+  (#7802)
+
+- Escape HTML in raw view of a message. (#6725)
+
+- Display an error message if an attachment couldn't be uploaded. (#7490)
+
+- Better error messages if a message couldn't be saved and if it couldn't be
+  sent as a consequence. (#7770)
+
 
 1.0.1 (2010-08-04)
 ==================
@@ -12,4 +35,4 @@ myTUM Webmailer CHANGES
 1.0 (2010-08-04)
 ================
 
-- erster Release als Paket.
+- initial release as a package
