@@ -5,6 +5,11 @@ Installation
 Update-Anweisungen
 ==================
 
+1.1
+---
+
+- bin/zopectl run lib/python/mytum/webmail/scripts/evolve3.py
+
 1.0
 ---
 
