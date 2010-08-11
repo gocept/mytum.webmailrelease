@@ -2,6 +2,20 @@
 myTUM Webmailer CHANGES
 =======================
 
+1.1beta3 (2010-08-11)
+=====================
+
+- Made the body_content_type parameter of the REST API's save method for
+  drafts optional to cope with the upgrade from the previous API version.
+
+
+1.1beta2 (2010-08-11)
+=====================
+
+- minor textual modification to the JS in order to release a version with new
+  resource hashes
+
+
 1.1beta1 (2010-08-09)
 =====================
 
