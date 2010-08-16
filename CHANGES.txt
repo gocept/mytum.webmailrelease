@@ -2,6 +2,11 @@
 myTUM Webmailer CHANGES
 =======================
 
+1.1beta4 (2010-08-12)
+=====================
+
+- Handle signatures when adding an account (#7874).
+
 1.1beta3 (2010-08-11)
 =====================
 
