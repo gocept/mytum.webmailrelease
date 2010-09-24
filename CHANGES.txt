@@ -2,10 +2,41 @@
 myTUM Webmailer CHANGES
 =======================
 
+1.2 (2010-09-24)
+================
+
+Features:
+
+- Mark message as unread, toggle important flag (#6250).
+
+- Folders can be marked as important, so they are sorted first (#7270).
+
+- Reply and Forward multiple messages (#6888).
+
+- Provide an avatar source that returns user portraits from the eIT
+  MembershipTool (#6951).
+
+- The Webmailer object allows retrieving the number of unread messages for all
+  accounts: `webmail.current_profile.biff()` (#7263).
+
+- Display a success notification after a message was sent successfully (#7571).
+
+- Open the Inbox of some account when first accessing the webmailer (#5990).
+
+- Use the myTUM address book when composing a message (#7265).
+
+Bug fixes:
+
+- Don't append the same signature multiple times (#7898).
+
+- It's possible now to reply to empty messages (#7911).
+
+
 1.1beta4 (2010-08-12)
 =====================
 
 - Handle signatures when adding an account (#7874).
+
 
 1.1beta3 (2010-08-11)
 =====================
