@@ -5,7 +5,8 @@ set -e
 VERSION=`sed -ne '/^release *=/s/^release *= *\(.*\)/\1/p' buildout.cfg`
 CURDIR=$PWD
 DISTDIR=$CURDIR/dist
-DOWNLOADDIR=download.gocept.com:/var/www/download.gocept.com/htdocs/webmailer/
+HOST=download.gocept.com
+DOWNLOADDIR=/var/www/download.gocept.com/htdocs/webmailer/
 TARBALL=$DISTDIR/webmailer-$VERSION.tar.bz2
 
 echo $VERSION >VERSION.txt
@@ -26,5 +27,6 @@ LATESTFILE=$DISTDIR/$LATEST.txt
 
 echo $VERSION >$LATESTFILE
 
-scp $TARBALL $DOWNLOADDIR
-scp $LATESTFILE $DOWNLOADDIR
+scp $TARBALL $HOST:$DOWNLOADDIR
+scp $LATESTFILE $HOST:$DOWNLOADDIR
+ssh $HOST chmod g+w $DOWNLOADDIR/*
