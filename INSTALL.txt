@@ -5,6 +5,11 @@ Installation
 Update-Anweisungen
 ==================
 
+1.2
+---
+
+- nichts zu tun
+
 1.1
 ---
 
