@@ -2,6 +2,15 @@
 myTUM Webmailer CHANGES
 =======================
 
+1.2.1 (2010-09-29)
+==================
+
+- Fixed handling of address-book search results (#7265).
+
+- Fixed an cross-site-scripting vulnerability in the composer's address-book
+  dialog (#8023).
+
+
 1.2 (2010-09-24)
 ================
 
