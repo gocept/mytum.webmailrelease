@@ -2,6 +2,12 @@
 myTUM Webmailer CHANGES
 =======================
 
+1.2.3 (2010-11-29)
+==================
+
+- Made on-the-fly update of old draft objects more robust (#8272).
+
+
 1.2.2 (2010-11-03)
 ==================
 
