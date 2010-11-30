@@ -2,6 +2,23 @@
 myTUM Webmailer CHANGES
 =======================
 
+1.2.4 (2010-11-30)
+==================
+
+Bugs:
+
+- After loading the webmailer, restore expanded and selected folders in the
+  tree in lock-step (#6632, also meant to help with #8076).
+
+- Made on-the-fly update of user preferences more robust (re #8076).
+
+Code:
+
+- Cleaned up a lot of Javascript syntax and coding style.
+
+- Improved testing infrastructure.
+
+
 1.2.3 (2010-11-29)
 ==================
 
