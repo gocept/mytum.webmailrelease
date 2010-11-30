@@ -5,6 +5,11 @@ Installation
 Update-Anweisungen
 ==================
 
+1.3
+---
+
+- Webmail-Property "attachment_handlers" (mehrzeiliger String) anlegen.
+
 1.2
 ---
 
@@ -64,6 +69,7 @@ Installation
     tum_login
     custommenu_target
     custommenu_title
+    attachment_handlers
 
 - Webmailer anlegen
 
