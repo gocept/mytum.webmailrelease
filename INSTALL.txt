@@ -82,6 +82,21 @@ Installation
   bin/zopectl run path/to/mytum.webmail/scripts/evolve1.py
 
 
+Webmail-Propertys
+=================
+
+Außer ``attachment_handlers`` sind alle Propertys TALES-Ausdrücke mit den
+Kontextvariablen ``portal`` und ``member``. Die Property
+``attachment_handlers`` enthält in jeder Zeile eine Definition für einen
+Handler und hat die Form "MIME-Type | TALES-Ausdruck | Titel". Der
+MIME-Type-Filter ist ohne Parameter anzugeben und kann in beiden Teilen einen
+Stern "*" als Wildcard enthalten. (Wenn bereits der Major-Typ "*" ist, wird
+der Minor-Typ gar nicht ausgewertet.) Der TALES-Ausdruck kennt zwei zusätzliche
+Kontextvariablen ``attachment`` und ``request``, wobei ``attachment`` der
+Inhalt des Anhangs als Byte-String ist. Der Titel wird für den Link neben dem
+Anhang verwendet, über den der Handler angesprochen wird.
+
+
 Sandbox
 =======
 
