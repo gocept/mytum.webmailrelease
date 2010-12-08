@@ -2,6 +2,28 @@
 myTUM Webmailer CHANGES
 =======================
 
+1.3 (2010-12-08)
+================
+
+Features:
+
+- Write a message to senders of messages (#7238).
+
+- Handle attachments with configurable portal methods (#7272).
+
+- Of the URLs detected by addhrefs, consider only those containing a schema or
+  a dot/slash combination for linking (#7288).
+
+Bug fixes:
+
+- When forwarding or replying to multiple messages, consider all recipients at
+  once for filtering out duplicates (#8326).
+
+Code:
+
+- Made some improvements to test infrastructure.
+
+
 1.2.3 (2010-11-29)
 ==================
 
