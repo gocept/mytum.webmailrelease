@@ -2,6 +2,14 @@
 myTUM Webmailer CHANGES
 =======================
 
+1.3.1 (2010-12-15)
+==================
+
+Bugs:
+
+- Creating new folders used to cause a Javascript error (#8282).
+
+
 1.3 (2010-12-08)
 ================
 
