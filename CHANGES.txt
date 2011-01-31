@@ -2,6 +2,18 @@
 myTUM Webmailer CHANGES
 =======================
 
+1.4 (2011-01-31)
+================
+
+Features:
+
+- Regularly reload the message list and notify the user of new e-mail (#6205).
+
+Code:
+
+- Cleaned up more Javascript syntax and coding style.
+
+
 1.3.1 (2010-12-15)
 ==================
 
