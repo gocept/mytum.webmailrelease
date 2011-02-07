@@ -2,6 +2,14 @@
 myTUM Webmailer CHANGES
 =======================
 
+
+1.4.1 (2011-02-07)
+==================
+
+- Bug fixed: When resizing the area holding the message list, the list would
+  not resize accordingly (ending up containing too many or too few rows).
+
+
 1.4 (2011-01-31)
 ================
 
